@@ -40,20 +40,21 @@ a {
 
 /* ROOT VARIABLES */
 :root {
-  --teal: #4CA7C0;
-  --purple: #484FB7;
-  --lavender: #6B8FE7;
-  --yellow: #E9BB57;
-  --pink: #D9526F;
-  --dark-gray: #1E1E1E;
-  --white: #ffffff;
+    --teal: #4CA7C0;
+    --purple: #484FB7;
+    --lavender: #6B8FE7;
+    --yellow: #E9BB57;
+    --pink: #D9526F;
+    --dark-gray: #1E1E1E;
+    --white: #ffffff;
 
-  --font-inter: 'Inter', Arial, sans-serif;
-  --font-kavoon: 'Kavoon', cursive;
+    --font-inter: 'Inter', Arial, sans-serif;
+    --font-kavoon: 'Kavoon', cursive;
 }
 
 /* GLOBAL STYLES (Mobile 450px)*/
-html, body {
+html,
+body {
     max-width: 450px;
     margin: 0 auto;
     background: var(--lavender);
@@ -69,7 +70,8 @@ body {
     min-height: 100vh;
 }
 
-h1, h2 {
+h1,
+h2 {
     font-family: var(--font-kavoon);
 }
 
@@ -81,10 +83,15 @@ h1 {
     margin-bottom: 0.2em;
 }
 
+.header-title {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
 .subtitle {
     font-family: var(--font-inter);
     font-style: italic;
-    font-size: 1.15em;
+    font-size: 1em;
     color: var(--white);
     text-align: center;
     margin-bottom: 1.5em;
@@ -99,9 +106,13 @@ h2 {
 nav h2 {
     font-size: 1.5em;
     color: var(--dark-gray);
-    font-family: var(--font-kavoon);
+    font-family: var(--font-inter);
     text-align: center;
-    margin: 10px 0 18px 0;
+    margin: 0;
+    padding-bottom: 12px;
+    text-transform: uppercase;
+    font-style: italic;
+    font-weight: 800;
 }
 
 h3 {
@@ -118,7 +129,12 @@ h4 {
     margin-bottom: 0.2em;
 }
 
-p, li, td, th, a, .schedule-btn {
+p,
+li,
+td,
+th,
+a,
+.schedule-btn {
     font-family: var(--font-inter);
 }
 
@@ -137,7 +153,7 @@ header {
 
 nav {
     background: var(--yellow);
-    padding: 0 0 32px 0;
+    padding: 12px 0 24px 0;
     text-align: center;
 }
 
@@ -145,7 +161,7 @@ nav ul {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 18px;
+    gap: 12px;
     margin: 0 auto;
     padding: 0;
     width: 100%;
@@ -157,26 +173,21 @@ nav li {
 }
 
 nav a {
-  display: block;
-  width: 100%;
-  max-width: 400px;
-  min-width: 180px;
-  margin-left: auto;
-  margin-right: auto;
-  background: var(--white);
-  color: var(--purple);
-  font-weight: 700;
-  font-size: 1.15em;
-  text-transform: uppercase;
-  text-align: center;
-  border: none;
-  border-radius: 0;
-  padding: 12px 0;
-  margin: 0 auto;
-  text-decoration: none;
-  box-shadow: none;
-  letter-spacing: 0.5px;
-  transition: background 0.2s, color 0.2s;
+    display: block;
+    width: 100%;
+    max-width: 400px;
+    min-width: 180px;
+    margin: 0 auto;
+    background: var(--white);
+    color: var(--purple);
+    font-weight: 800;
+    font-size: 1em;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 20px 0;
+    text-decoration: none;
+    box-shadow: none;
+    transition: background 0.2s, color 0.2s;
 }
 
 nav a:hover {
@@ -185,66 +196,64 @@ nav a:hover {
 }
 
 #services {
-  background: var(--purple);
-  padding: 0 0 32px 0;
-  color: var(--white);
-  box-shadow: none;
-  margin-top: 0;
-  width: 100%;
-  max-width: 450px;
-  margin-left: auto;
-  margin-right: auto;
-  border-top: 8px solid var(--yellow);
+    background: var(--purple);
+    padding: 0;
+    color: var(--white);
+    box-shadow: none;
+    margin-top: 0;
+    width: 100%;
+    max-width: 450px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 #services h2 {
-  color: var(--white);
-  font-family: var(--font-kavoon);
-  margin: 0 0 0.2em 0;
-  padding: 24px 0 0 18px;
-  letter-spacing: 0.5px;
-  text-align: left;
+    color: var(--white);
+    font-family: var(--font-kavoon);
+    margin: 0 0 0.2em 0;
+    padding: 24px 0 0 18px;
+    letter-spacing: 0.5px;
+    text-align: left;
 }
 
-#services section > h3 {
-  color: var(--yellow);
-  font-size: 1.5em;
-  font-weight: 700;
-  margin: 0 0 12px 18px;
-  text-align: left;
-  letter-spacing: 0.2px;
+#services section>h3 {
+    color: var(--yellow);
+    font-size: 1.5em;
+    font-weight: 700;
+    margin: 0 0 12px 18px;
+    text-align: left;
+    letter-spacing: 0.2px;
 }
 
 .service-info {
-  background: var(--white);
-  color: var(--dark-gray);
-  border-radius: 16px;
-  padding: 25px;
-  margin: 18px;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 1.5em;
-  min-height: 180px;
+    background: var(--white);
+    color: var(--dark-gray);
+    border-radius: 16px;
+    padding: 25px;
+    margin: 18px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1.5em;
+    min-height: 180px;
 }
 
 #services figure {
-  margin: 0;
-  flex-shrink: 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 64px;
-  height: 64px;
+    margin: 20px 0;
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 64px;
+    height: 64px;
 }
 
 #services img {
-  width: 100px;
-  height: 100px;
-  margin-left: 40px;
-  border-radius: 0;
-  box-shadow: none;
-  background: none;
+    width: 100px;
+    height: 100px;
+    border-radius: 0;
+    box-shadow: none;
+    background: none;
 }
 
 
@@ -307,17 +316,28 @@ nav a:hover {
     padding: 24px 20px;
 }
 
-.why-list li:nth-child(1) { background: var(--teal); }
-.why-list li:nth-child(2) { background: var(--lavender); }
-.why-list li:nth-child(3) { background: var(--yellow); }
-.why-list li:nth-child(4) { background: var(--white); }
+.why-list li:nth-child(1) {
+    background: var(--teal);
+}
+
+.why-list li:nth-child(2) {
+    background: var(--lavender);
+}
+
+.why-list li:nth-child(3) {
+    background: var(--yellow);
+}
+
+.why-list li:nth-child(4) {
+    background: var(--white);
+}
 
 #pricing {
     background: var(--purple);
     padding: 0;
     width: 100%;
     max-width: 450px;
-   margin: 0 auto 0 auto;
+    margin: 0 auto 0 auto;
 }
 
 #pricing h2 {
@@ -330,7 +350,7 @@ nav a:hover {
     text-align: left;
 }
 
-#pricing section > h3 {
+#pricing section>h3 {
     color: var(--yellow);
     font-size: 1.5em;
     font-weight: 700;
@@ -349,7 +369,8 @@ nav a:hover {
     margin: 0 auto 12px auto;
 }
 
-#pricing th, #pricing td {
+#pricing th,
+#pricing td {
     padding: 16px 12px;
     text-align: center;
     font-size: 1em;
@@ -418,7 +439,8 @@ nav a:hover {
     transition: background 0.2s, box-shadow 0.2s;
 }
 
-.schedule-btn:hover, .schedule-btn:focus {
+.schedule-btn:hover,
+.schedule-btn:focus {
     background: var(--white);
     box-shadow: 2px 4px 0 0 var(--dark-gray);
 }
@@ -449,7 +471,9 @@ footer a {
 }
 
 @media (max-width: 450px) {
-    html, body {
+
+    html,
+    body {
         max-width: 100vw;
         overflow-x: hidden;
     }
