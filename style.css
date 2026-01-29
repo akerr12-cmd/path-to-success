@@ -227,3 +227,79 @@ nav a:hover {
   gap: 1em;
   min-height: 120px;
 }
+
+#services figure {
+  margin: 0;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 64px;
+  height: 64px;
+}
+
+#services img {
+  width: 64px;
+  height: 64px;
+  border-radius: 0;
+  box-shadow: none;
+  background: none;
+}
+
+#services h4 {
+    color: var(--purple);
+    font-size: 1.15em;
+    margin: 0 0 0.2em 0;
+    font-weight: 700;
+    text-align: left;
+}
+
+#services p {
+    color: var(--dark-gray);
+    font-size: 1.15em;
+    margin: 0;
+    text-align: left;
+    line-height: 1.5em;
+}
+
+#why {
+    background: var(--pink);
+    padding: 0;
+    width: 100%;
+    max-width: 450px;
+    margin: 0 auto 0 auto;
+}
+
+#why h2 {
+    color: var(--white);
+    font-family: var(--font-kavoon);
+    font-size: 2em;
+    margin: 0;
+    padding: 12px 0 0 18px;
+    letter-spacing: 0.5px;
+    text-align: left;
+}
+
+.why-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    padding: 18px;
+    margin: 0;
+    list-style: none;
+}
+
+.why-list li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 120px;
+    border-radius: 24px;
+    font-weight: 700;
+    font-size: 1.15em;
+    text-align: center;
+    background: var(--white);
+    color: var(--dark-gray);
+    box-shadow: 0 2px 8px 0 rgba(80, 80, 120, 0.10);
+    padding: 24px 20px;
+}
