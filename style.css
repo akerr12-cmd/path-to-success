@@ -309,4 +309,128 @@ nav a:hover {
 .why-list li:nth-child(3) { background: var(--yellow); }
 .why-list li:nth-child(4) { background: var(--white); }
 
+#pricing {
+    background: var(--purple);
+    padding: 0 0 32px 0;
+    width: 100%;
+    max-width: 450px;
+   margin: 0 auto 0 auto;
+}
 
+#pricing h2 {
+    color: var(--white);
+    font-family: var(--font-kavoon);
+    font-size: 2em;
+    margin: 0;
+    padding: 24px 0 0 12px;
+    letter-spacing: 0.5px;
+    text-align: left;
+}
+
+#pricing section > h3 {
+    color: var(--yellow);
+    font-size: 1.5em;
+    font-weight: 700;
+    margin: 0 0 12px 18px;
+    text-align: left;
+    letter-spacing: 0.2px;
+    font-family: var(--font-inter);
+}
+
+#pricing table {
+    width: 60%;
+    border-collapse: collapse;
+    background: var(--white);
+    overflow: hidden;
+    box-shadow: 0 2px 8px 0 rgba(80, 80, 120, 0.10);
+    margin: 0 auto 12px auto;
+}
+
+#pricing th, #pricing td {
+    padding: 16px 12px;
+    text-align: center;
+    font-size: 1.15em;
+    border: 2px solid var(--yellow);
+}
+
+#pricing-tri:last-child td {
+    border-bottom: 2px solid var(--yellow);
+}
+
+#contact {
+    background: var(--pink);
+    padding: 0 0 32px 0;
+    width: 100%;
+    max-width: 450px;
+    margin: 0 auto 0 auto;
+    text-align: center;
+}
+
+#contact h2 {
+    color: var(--white);
+    font-family: var(--font-kavoon);
+    font-size: 2em;
+    margin: 0 0 0.5em 0;
+    padding: 24px 0 0 0;
+    letter-spacing: 0.5px;
+    text-align: center;
+}
+
+#contact p {
+    color: var(--white);
+    font-family: var(--font-inter);
+    font-size: 1.15em;
+    margin: 0 0 2em 0;
+    text-align: center;
+    line-height: 1.5em;
+}
+
+.schedule-btn {
+    display: block;
+    background: var(--white);
+    color: var(--dark-gray);
+    font-family: var(--font-inter);
+    font-weight: 700;
+    font-size: 1.15em;
+    border: none;
+    border-radius: 24px;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 24px 0;
+    margin: 0 auto;
+    width: 90%;
+    max-width: 400px;
+    box-shadow: 4px 4px 0 0 var(--dark-gray);
+    letter-spacing: 0.5px;
+    cursor: pointer;
+    transition: background 0.2s, box-shadow 0.2s;
+}
+
+.schedule-btn:hover, .schedule-btn:focus {
+    background: var(--white);
+    box-shadow: 2px 4px 0 0 var(--dark-gray);
+}
+
+footer {
+    background: var(--white);
+    color: var(--purple);
+    text-align: center;
+    font-size: 1.15em;
+    padding: 18px 0 12px 0;
+    box-shadow: 0 -2px 12px 0 rgba(80, 80, 120, 0.08);
+    margin-top: auto;
+}
+
+footer a {
+    color: var(--lavender);
+    font-size: 1.15em;
+    text-decoration: underline;
+    margin-left: 8px;
+}
+
+@media (min-width: 600px) {
+    /* GLOBAL STYLES (Tablet 600px)*/
+    html, body {
+        max-width: 600px;
+    }
+}
