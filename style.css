@@ -52,7 +52,7 @@ a {
     --font-kavoon: 'Kavoon', cursive;
 }
 
-/* GLOBAL STYLES (Mobile 450px)*/
+/* GLOBAL STYLES (mobile first/small)*/
 html,
 body {
     max-width: 450px;
